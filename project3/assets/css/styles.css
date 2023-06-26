@@ -1,0 +1,210 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+.logo {
+    height: 2.5vw;
+    width:2.5vw;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:2vw;
+}
+main {
+    display: flex;
+    justify-content:space-evenly;
+}
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+li {
+    margin-left:13vw;
+    margin-right: 13vw;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1vw;
+    font-weight: bold;
+}
+.active{
+    color: rgb(241, 107, 98);
+}
+a:hover {
+    color:rgb(0, 123, 255);
+    font-weight: bolder;
+}
+.overlay {
+    opacity:0;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+/* home */
+.home {
+    justify-content:center;
+}
+.main-heading {
+    font-size:9vw;
+    position: absolute;
+    top: 1%;
+    left:1%;
+}
+.main-subheading {
+    font-size:5vw;
+    position: absolute;
+    bottom: 1%;
+    right:3%;
+}
+.jumbo {
+    margin-top: 5vw;
+    width: 50vw;
+}
+
+/* music */
+.music {
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5vw;
+}
+.album-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 20vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.album-title {
+    color:white;
+    font-weight:600;
+    text-shadow: -0.05vw 0.05vw 0 #007bff,0.05vw 0.05vw 0 #007bff,0.05vw -0.05vw 0 #007bff,-0.05vw -0.05vw 0 #007bff;
+}
+.in-the-end {
+    background-image:url(../images/in-the-end-it-always-does.png);
+}
+.chewing-cotton {
+    background-image:url(../images/chewing-cotton-wool.jpg);
+}
+.good-at{
+    background-image:url(../images/good-at-falling.png);
+}
+.saw-you{
+    background-image:url(../images/saw-you-in-a-dream.jpg);
+}
+.swim {
+    background-image:url(../images/swim-against-the-tide.jpg);
+}
+.clean{
+    background-image:url(../images/clean.jpg);
+}
+.pools {
+    background-image:url(../images/pools-to-bathe-in.jpg);
+}
+.album-container:hover {
+    opacity: 0.7;
+  }
+  .album-container:hover .overlay {
+    opacity: 1;
+  }
+  .spotify {
+    font-size:2vw;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background-color:rgb(0, 123, 255);
+  }
+  .spotify:hover {
+    background-color:rgb(241, 107, 98);
+  }
+  .spotify:hover + h2 {
+    text-shadow: -0.05vw 0.05vw 0 #f16b62,0.05vw 0.05vw 0 #f16b62,0.05vw -0.05vw 0 #f16b62,-0.05vw -0.05vw 0 #f16b62;
+
+  }
+
+
+/* news */
+.news-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:30vw;
+}
+.album-container-latest {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    height: 35vw;
+    background-image:url(../images/in-the-end-it-always-does.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.album-container-latest:hover {
+    opacity: 0.7;
+  }
+  .album-container-latest:hover .overlay {
+    opacity: 1;
+  }
+  .spotify-latest {
+    font-size: 3vw;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background-color:rgb(0, 123, 255);
+  }
+  .spotify-latest:hover {
+    background-color:rgb(241, 107, 98);
+    font-weight: bold;
+  }
+  .tour-container{
+    background-image:url(../images/tour.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    height: 35vw;
+  }
+  .tour-container:hover {
+    opacity: 0.7;
+  }
+  .tour-container:hover .overlay {
+    opacity: 1;
+  }
+  .tickets {
+    font-size: 3vw;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background-color:rgb(241, 107, 98);
+  }
+  .tickets:hover {
+    background-color:rgb(0, 123, 255);
+    font-weight: bold;
+  }

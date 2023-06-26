@@ -52,18 +52,55 @@ a:hover {
 .main-heading {
     font-size:9vw;
     position: absolute;
+    z-index: 1;
     top: 1%;
     left:1%;
 }
 .main-subheading {
     font-size:5vw;
     position: absolute;
-    bottom: 1%;
+    bottom: 6%;
     right:3%;
+    margin: 0;
 }
-.jumbo {
+.overlay-main{
+    transition: .5s ease;
+    background-color: #4796ea;
+    width: 50vw;
+    height: 35vw;
+}
+/* .jumbo {
     margin-top: 5vw;
     width: 50vw;
+} */
+.jumbo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4.5vw;
+    width: 50vw;
+    height: 35vw;
+    background-image:url(https://mloz35cl5wye.i.optimole.com/cb:s357.4350f/w:800/h:533/q:90/https://www.slugmag.com/wp/wp-content/uploads/2019/10/Japanese-House-Reading-2019-www.patrickgunning.com-03318.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bio {
+    color: white;
+    font-size:2.5vw;
+}
+@media screen and (min-width: 2000px) {
+    .jumbo{
+        margin-top:5vw;
+    }
+    .main-subheading {
+        bottom: 8%;
+    }
+    
+}
+.jumbo:hover .overlay-main {
+    opacity: 0.9;
 }
 
 /* music */

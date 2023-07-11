@@ -44,6 +44,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
 }
 h1 {
     font-family: 'Permanent Marker', cursive;
@@ -51,7 +52,6 @@ h1 {
     z-index: 1;
     color:rgb(48, 163, 30);
     text-shadow: 1px 1px 0px #0f5a13;
-
 }
 main {
   flex: 1 0 auto;
@@ -70,9 +70,8 @@ video {
   width: 100%;
 }
 hr {
-  border-top: 1px solid #30a31e;
+  border-top: 1.5rem solid #30a31e;
 }
-
  footer {
   background-color: #30a31e;
   display: flex;
@@ -80,15 +79,31 @@ hr {
   justify-content: center;
   padding:1rem 3rem;
   flex-shrink: 0;
-  
 } 
 .nav-links-f {
   font-family: 'Permanent Marker', cursive;
   color:white;
   text-decoration: none;
 }
-
-/* issues */
+p {
+  font-family: 'Permanent Marker', cursive;
+  color:white;
+}
+.card1 {
+  height: 30rem;
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 2rem;
+}
+.sub-card1 {
+  background-color: rgb(48, 163, 30);
+  text-align: right;
+  padding: 0.5em 0.5rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+/* actions & issues */
 
 .row {
   display: flex;
@@ -109,6 +124,8 @@ hr {
 .card:hover .sub-card {
   background-color: white;
   border-left: 0.24rem solid #30a31e;
+  border-bottom: 0.24rem solid #30a31e;
+  border-right: 0.24rem solid #30a31e;
 }
 .card:hover h2 {
   color: #30a31e;
@@ -119,11 +136,72 @@ hr {
   padding: 0.5em 0.5rem;
   border-radius: 0 0 0.5rem 0.5rem;
 }
-
 img {
   object-fit: contain;
   border-radius: 0.5rem 0.5rem 0 0;
 }
+
+
+/* donate */
+
+#table-container {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  padding:0 2rem;
+}
+#table-header {
+  color:#30a31e;
+  font-size: 3rem;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: 'Permanent Marker', cursive; 
+  text-align: left;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+th {
+  font-family: 'Permanent Marker', cursive; 
+  background-color: #30a31e;
+  font-size: 3.5rem;
+  color: #fff;
+  padding: 2rem 2rem;
+  letter-spacing: 0.5rem;
+  border-right: 0.15rem solid #30a31e;
+  border-left: 0.15rem solid #30a31e; 
+}
+td {
+  font-size: 1.5rem;
+  padding: 0.25rem 2rem;
+  border-bottom: 0.15rem solid #30a31e;
+  border-right: 0.15rem solid #30a31e;
+  border-left: 0.15rem solid #30a31e;
+  font-weight: bold;
+}
+ul {
+  padding: 0 1rem;
+}
+button {
+  color:#fff;
+  background-color: #30a31e;
+  border: none;
+  font-family: 'Permanent Marker', cursive;
+  padding: 0.5rem 0.5rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+}
+button:hover {
+  background-color:#0f5a13;
+}
+
+/* signup */
 
 form {
   text-align: left;
@@ -143,4 +221,14 @@ input {
   margin: 1rem 1rem;
   padding: 0.5rem 1rem;
   font-family: 'Permanent Marker', cursive;  
+}
+.card:hover h2 {
+  color: #ffffff;
+}
+.submit {
+  background-color: #fff
+}
+.submit:hover {
+  background-color:#0f5a13;
+  color: #fff;
 }

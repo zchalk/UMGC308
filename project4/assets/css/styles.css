@@ -46,6 +46,9 @@ nav {
     justify-content: center;
     text-decoration: none;
 }
+#landing-img:hover h1 {
+  color: #fff;
+}
 h1 {
     font-family: 'Permanent Marker', cursive;
     font-size: 12rem;
@@ -222,7 +225,7 @@ input {
   padding: 0.5rem 1rem;
   font-family: 'Permanent Marker', cursive;  
 }
-.card:hover h2 {
+.card:hover .form-title {
   color: #ffffff;
 }
 .submit {
